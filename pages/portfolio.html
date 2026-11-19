@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Jing’s personal portfolio. Projects, background, skills, and contact information.">
+        <title>Personal Portfolio | Jing Heng</title>
+        <link rel="stylesheet" href="../style.css">
+        <script src="../script.js" defer=""></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <!-- Shared navigation: native links work without JavaScript. -->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="wordmark" href="#home" aria-label="Jing Heng, home">Jing Heng<span class="brand-caption" aria-hidden="true">/ portfolio</span></a>
+                <button class="theme-toggle icon-button" type="button" aria-label="Theme: Dark. Switch to light mode" title="Switch to light mode" hidden="">
+                    <!-- Google Material wb_sunny / brightness_2; license retained in src/licenses/. -->
+                    <img class="theme-icon theme-sun" src="../src/icons/sun.svg" width="22" height="22" alt="" hidden="">
+                    <img class="theme-icon theme-moon" src="../src/icons/moon.svg" width="22" height="22" alt="">
+                </button>
+                <button class="menu-toggle icon-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" hidden="">
+                    <img class="menu-icon" src="../src/icons/menu.svg" width="24" height="24" alt="">
+                </button>
+                <nav id="primary-navigation" aria-label="Main navigation">
+                    <a href="#experiences">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#certificates">Certificates</a>
+                    <a class="contact-link" href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main" tabindex="-1">
+            <div id="home" class="landing-slot" tabindex="-1">
+            <section class="hero container" aria-labelledby="home-title">
+                <div class="hero-stage">
+                    <div class="hero-copy">
+                        <!-- Decorative macOS-style window controls. -->
+                        <div class="terminal-topbar" aria-hidden="true">
+                            <span class="window-control window-close"></span>
+                            <span class="window-control window-minimize"></span>
+                            <span class="window-control window-restore"></span>
+                            <span class="window-caption">Jing Heng · Terminal</span>
+                        </div>
+                        <h1 id="home-title">Hello world, I&#8217;m Jing Heng!</h1>
+                        <div class="terminal-details">
+                            <div class="terminal-details-inner">
+                                <p class="hero-intro">Studying Applied AI &amp; Analytics @ NYP</p>
+                                <div class="hero-actions">
+                                    <a class="button button-primary" href="#experiences">Explore projects</a>
+                                    <a class="button button-secondary" href="#about">Get to know me</a>
+                                    <span class="token-count" aria-hidden="true"><img src="../src/icons/coin.svg" width="20" height="20" alt=""><span class="token-value">2,048</span><span>tokens</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="satellite-window portrait-window">
+                        <div class="satellite-topbar" aria-hidden="true">
+                            <span class="window-control window-close"></span>
+                            <span class="window-control window-minimize"></span>
+                            <span class="window-control window-restore"></span>
+                            <span class="window-caption">profile</span>
+                        </div>
+                        <a class="portrait-link" href="https://www.linkedin.com/in/teh-jing-heng-3aa589407/" target="_blank" rel="noopener noreferrer" aria-label="Visit Jing Heng on LinkedIn">
+                            <img src="../src/images/linkedin-profile.png" alt="Jing Heng" width="400" height="400">
+                        </a>
+                    </div>
+                    <div class="satellite-window cat-window" aria-hidden="true">
+                        <div class="satellite-topbar" aria-hidden="true">
+                            <span class="window-control window-close"></span>
+                            <span class="window-control window-minimize"></span>
+                            <span class="window-control window-restore"></span>
+                            <span class="window-caption">coding-cat.gif</span>
+                        </div>
+                        <picture class="cat-media">
+                            <source media="(prefers-reduced-motion: reduce), (max-width: 767px), (max-height: 639px)" srcset="../src/images/coding-cat-still.png">
+                            <img src="../src/gifs/coding-cat.gif" alt="Animated cat coding" width="256" height="256">
+                        </picture>
+                    </div>
+                </div>
+                <a class="scroll-hint" href="#experiences">Scroll down to see more</a>
+            </section>
+
+            </div>
+            <div class="page-content">
+            <div class="container">
+            <section id="experiences" aria-labelledby="experiences-title" tabindex="-1">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">01 / Projects</p>
+                        <h2 id="experiences-title">Selected projects.</h2>
+                    </div>
+                    <div class="project-heading-actions">
+                        <span class="count-label mono">03 published</span>
+                        <div class="slideshow-controls" hidden>
+                            <button class="icon-button" type="button" data-slide-previous aria-label="Previous project" aria-controls="project-slides"><img src="../src/icons/chevron-left.svg" width="16" height="16" alt=""></button>
+                            <button class="icon-button" type="button" data-slide-next aria-label="Next project" aria-controls="project-slides"><img src="../src/icons/chevron-right.svg" width="16" height="16" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <section id="projects" class="project-slideshow" aria-roledescription="carousel" aria-label="Pinned projects">
+                    <div id="project-slides" class="project-slides">
+                        <article class="project-slide project-placeholder">
+                            <div class="project-visual"><img src="../src/images/project-study.jpg" alt="" decoding="async"></div>
+                            <div class="project-copy">
+                                <h3>Study-Site</h3>
+                                <p class="project-description">A study website built by a student for other students. I worked with Claude and Codex to build and review the site and share lessons.</p>
+                                <a class="button button-secondary" href="https://github.com/Git-67/Study-Site" aria-label="View Study-Site on GitHub"><img src="../src/icons/github.svg" width="18" height="18" alt="">View on GitHub</a>
+                            </div>
+                        </article>
+                        <article class="project-slide project-placeholder">
+                            <div class="project-visual"><img src="../src/images/project-mars.jpg" alt="" decoding="async"></div>
+                            <div class="project-copy">
+                                <span class="status-tag">Hackathon</span>
+                                <h3>NASA-Space-Apps-26</h3>
+                                <p class="project-description">Sol Stroll is a survival guide for astronauts exploring Mars. It focuses on navigating the planet&#8217;s dusty terrain and harsh conditions.</p>
+                                <a class="button button-secondary" href="https://github.com/Git-67/NASA-Space-Apps-26" aria-label="View NASA-Space-Apps-26 on GitHub"><img src="../src/icons/github.svg" width="18" height="18" alt="">View on GitHub</a>
+                            </div>
+                        </article>
+                        <article class="project-slide project-placeholder">
+                            <div class="project-visual"><img src="../src/images/project-audio.jpg" alt="" decoding="async"></div>
+                            <div class="project-copy">
+                                <h3>Horrible-Alexa</h3>
+                                <p class="project-description">A homemade desktop assistant that adjusts screen brightness and volume, queues music, and chats with the user.</p>
+                                <a class="button button-secondary" href="https://github.com/Git-67/Horrible-Alexa" aria-label="View Horrible-Alexa on GitHub"><img src="../src/icons/github.svg" width="18" height="18" alt="">View on GitHub</a>
+                            </div>
+                        </article>
+                    </div>
+                    <span class="slideshow-status toolkit-status" role="status" aria-atomic="true"></span>
+                </section>
+            </section>
+
+            <div class="profile-grid">
+                <section id="about" class="info-panel about-panel" aria-labelledby="about-title" tabindex="-1">
+                    <p class="eyebrow">02 / About</p>
+                    <h2 id="about-title">Behind the work.</h2>
+                    <p class="about-intro">I&#8217;m Jing Heng, a <strong>Year 1 Applied AI &amp; Analytics student</strong> at <strong>Nanyang Polytechnic (NYP)</strong>, working towards a future as an <strong class="about-highlight">AI Engineer</strong> or <strong class="about-highlight">Machine Learning Researcher</strong>.</p>
+                    <p>I&#8217;m building a foundation that connects software development, data analysis, and design. My interests span creating web applications, exploring data with Python, and presenting findings through clear visualizations. I want to understand both <em>how intelligent systems work</em> and how to turn that understanding into useful applications.</p>
+                    <p>Personal projects, including a study website and this portfolio, give me space to put ideas into practice and refine them. I care about how an application feels to use, from its layout and accessibility to the clarity of its content.</p>
+                    <p>As I progress through my studies, my focus is on <strong>strengthening my technical fundamentals</strong> and developing the skills to build, evaluate, and improve AI systems. I also explore AI-assisted development tools as part of my workflow.</p>
+                </section>
+                <section id="skills" class="info-panel skills-panel" aria-labelledby="skills-title" tabindex="-1">
+                    <p class="eyebrow">03 / Technical Skills</p>
+                    <h2 id="skills-title">The toolkit.</h2>
+                    <p>Languages and tools I use across development, analysis, and design.</p>
+                    <div class="toolkit-carousel" role="region" aria-roledescription="carousel" aria-label="Skill categories">
+                        <div class="toolkit-track" id="toolkit-track" role="group" tabindex="0" aria-label="Skill categories, use left and right arrow keys">
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="1 of 7: Web development">
+                                <h3>Web development</h3>
+                                <div class="toolkit-image"><img src="../src/images/toolkit-web.jpg" width="900" height="600" alt="HTML and CSS source code on a screen" decoding="async" draggable="false"></div>
+                                <ul class="toolkit-badges" aria-label="Web development tools"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                                <p>Building responsive web interfaces with structure, styling, and interactive behavior.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="2 of 7: Python">
+                                <h3>Python</h3>
+                                <div class="toolkit-image"><img src="../src/images/toolkit-python.jpg" width="900" height="600" alt="Python source code displayed on a screen" decoding="async" draggable="false"></div>
+                                <ul class="toolkit-badges" aria-label="Python tools"><li>Python</li><li>Flask</li><li>NumPy</li><li>Matplotlib</li><li>socket</li></ul>
+                                <p>Programming for web backends, numerical computing, plotting data, and network communication.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="3 of 7: Networking &amp; analysis">
+                                <h3>Networking &amp; analysis</h3>
+                                <div class="toolkit-image"><img src="../src/images/toolkit-network.jpg" width="900" height="600" alt="Network cables connected to equipment" decoding="async" draggable="false"></div>
+                                <ul class="toolkit-badges" aria-label="Networking &amp; analysis tools"><li>Wireshark</li><li>Cisco Packet Tracer</li></ul>
+                                <p>Inspecting network traffic and simulating networks to understand connections and investigate communication problems.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="4 of 7: Data visualization">
+                                <h3>Data visualization</h3>
+                                <div class="toolkit-image"><img src="../src/images/toolkit-data.jpg" width="900" height="600" alt="Laptop displaying data charts" decoding="async" draggable="false"></div>
+                                <ul class="toolkit-badges" aria-label="Data visualization tools"><li>Tableau</li><li>Power BI</li></ul>
+                                <p>Turning data into charts and dashboards that make patterns, comparisons, and findings easier to understand.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="5 of 7: Version control">
+                                <h3>Version control</h3>
+                                <div class="toolkit-image"><img src="../src/images/toolkit-version.jpg" width="900" height="600" alt="Colleagues reviewing work together on a laptop" decoding="async" draggable="false"></div>
+                                <ul class="toolkit-badges" aria-label="Version control tools"><li>Git</li><li>GitHub</li></ul>
+                                <p>Tracking code changes, managing branches, and keeping project history organized for individual and collaborative work.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="6 of 7: Wireframing &amp; design">
+                                <h3>Wireframing &amp; design</h3>
+                                <div class="toolkit-image"><img src="../src/images/toolkit-design.jpg" width="900" height="600" alt="Website wireframe sketched on paper" decoding="async" draggable="false"></div>
+                                <ul class="toolkit-badges" aria-label="Wireframing &amp; design tools"><li>Figma</li><li>Adobe Express</li></ul>
+                                <p>Planning page layouts and creating visual concepts to explore how an interface should look and work.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="7 of 7: AI-assisted development">
+                                <h3>AI-assisted development</h3>
+                                <div class="toolkit-image"><img src="../src/images/toolkit-ai.jpg" width="900" height="600" alt="Laptop displaying an AI chat interface" decoding="async" draggable="false"></div>
+                                <ul class="toolkit-badges" aria-label="AI-assisted development tools"><li>Claude Code</li><li>Codex</li><li>Kiro</li><li>Dependabot</li></ul>
+                                <p>Using AI coding tools to explore ideas and support implementation and debugging, alongside Dependabot for automated dependency updates. Review and testing remain part of the process.</p>
+                            </article>
+                        </div>
+                        <button class="toolkit-arrow toolkit-previous icon-button" type="button" aria-label="Previous skill category" aria-controls="toolkit-track" hidden><img src="../src/icons/chevron-left.svg" width="16" height="16" alt=""></button>
+                        <button class="toolkit-arrow toolkit-next icon-button" type="button" aria-label="Next skill category" aria-controls="toolkit-track" hidden><img src="../src/icons/chevron-right.svg" width="16" height="16" alt=""></button>
+                        <div class="toolkit-pagination" hidden>
+                            <div class="toolkit-dots" role="group" aria-label="Choose a skill category">
+                                <button class="toolkit-dot" type="button" aria-label="Show Web development" aria-controls="toolkit-track" aria-current="true" data-toolkit-index="0"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show Python" aria-controls="toolkit-track" data-toolkit-index="1"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show Networking &amp; analysis" aria-controls="toolkit-track" data-toolkit-index="2"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show Data visualization" aria-controls="toolkit-track" data-toolkit-index="3"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show Version control" aria-controls="toolkit-track" data-toolkit-index="4"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show Wireframing &amp; design" aria-controls="toolkit-track" data-toolkit-index="5"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show AI-assisted development" aria-controls="toolkit-track" data-toolkit-index="6"><span></span></button>
+                            </div>
+                        </div>
+                        <span class="toolkit-status" role="status" aria-live="polite" aria-atomic="true"></span>
+                    </div>
+                </section>
+            </div>
+
+            <section id="education" class="education-section" aria-labelledby="education-title" tabindex="-1">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">04 / Education</p>
+                        <h2 id="education-title">My learning journey.</h2>
+                    </div>
+                </div>
+                <p class="education-intro">From secondary school to applied AI, with more to learn ahead.</p>
+                <ol class="education-timeline" aria-label="Education journey">
+                    <li class="education-step">
+                        <div class="education-stage"><span class="education-status">Completed</span><div class="education-logo"><img src="../src/images/mayflower-logo.png" alt="" decoding="async" width="96" height="96"></div><span>2022 &ndash; 2025</span><span>Secondary education</span></div>
+                        <div class="education-detail">
+                            <h3>Mayflower Secondary School</h3>
+                            <p>My secondary school education, before continuing my studies at Nanyang Polytechnic.</p>
+                            <ul class="education-awards" aria-label="Mayflower achievements">
+                                <li><strong>Leadership Merit Award</strong><span>At graduation</span></li>
+                                <li><strong>EAGLES Award</strong><span>2025</span></li>
+                                <li><strong>Most Improved Award</strong><span>2025</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="education-step education-current" aria-current="step">
+                        <div class="education-stage"><span class="education-status">Currently studying</span><div class="education-logo"><img src="../src/images/nyp-logo.svg" alt="" decoding="async" width="96" height="96"></div><span>2026 &ndash; 2029 (expected)</span><span>Year 1</span></div>
+                        <div class="education-detail">
+                            <h3>Nanyang Polytechnic</h3>
+                            <p class="education-course">Applied AI &amp; Analytics</p>
+                            <p>Building my foundation in artificial intelligence and data analytics as I work towards becoming an AI Engineer or Machine Learning Researcher.</p>
+                        </div>
+                    </li>
+                    <li class="education-step education-future">
+                        <div class="education-stage"><span class="education-status">Aspiration</span><div class="education-logo"><img src="../src/images/nus-logo.png" alt="" decoding="async" width="96" height="96"></div><span>Looking ahead</span></div>
+                        <div class="education-detail">
+                            <h3>National University of Singapore</h3>
+                            <p class="education-course">AI-related studies</p>
+                            <p>I aim to pursue an AI-related course at NUS, deepening my understanding of artificial intelligence and exploring opportunities in machine learning research.</p>
+                            <span class="education-note">Future goal</span>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <div class="experience-pair">
+                <section id="certificates" class="experience-entry info-panel" aria-labelledby="certificates-title">
+                    <p class="eyebrow">05 / Certificates</p>
+                    <h2 id="certificates-title">Selected certificates.</h2>
+                    <div class="toolkit-carousel certificate-carousel" role="group" aria-roledescription="carousel" aria-labelledby="certificates-title">
+                        <div class="toolkit-track" id="certificate-track" role="group" tabindex="0" aria-label="Certificates, use left and right arrow keys">
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="1 of 6">
+                                <h3>CompTIA Security+</h3>
+                                <div class="toolkit-image"><img src="../src/images/certificate-security-plus.jpg" width="468" height="360" alt="" loading="lazy" decoding="async" draggable="false"></div>
+                                <a class="button button-secondary" href="https://drive.google.com/file/d/11o-NJp-uMJ8DhgDAoGxEm4fRONXbXLfm/view" rel="noreferrer" aria-label="View certificate for CompTIA Security+"><img src="../src/icons/google-drive.svg" width="20" height="20" alt="">View certificate</a>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="2 of 6">
+                                <h3>NASA Space Apps Challenge 2026</h3>
+                                <div class="toolkit-image"><img src="../src/images/certificate-space-apps.jpg" width="850" height="657" alt="" loading="lazy" decoding="async" draggable="false"></div>
+                                <a class="button button-secondary" href="https://drive.google.com/file/d/1elTOr8-08MSxDagpPi4xHlcdHDEC9HPn/view" rel="noreferrer" aria-label="View certificate for NASA Space Apps Challenge 2026"><img src="../src/icons/google-drive.svg" width="20" height="20" alt="">View certificate</a>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="3 of 6">
+                                <h3>Google.org AI Ready</h3>
+                                <div class="toolkit-image"><img src="../src/images/certificate-ai-ready.jpg" width="850" height="653" alt="" loading="lazy" decoding="async" draggable="false"></div>
+                                <a class="button button-secondary" href="https://drive.google.com/file/d/1b0rT1aQ4XL1ZeWjL0Et_DvUnyoSqAG1r/view" rel="noreferrer" aria-label="View certificate for Google.org AI Ready"><img src="../src/icons/google-drive.svg" width="20" height="20" alt="">View certificate</a>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="4 of 6">
+                                <h3>BuildingBloCS 2025 June Conference Runner-Up</h3>
+                                <div class="toolkit-image"><img src="../src/images/certificate-buildingblocs.jpg" width="587" height="409" alt="" loading="lazy" decoding="async" draggable="false"></div>
+                                <a class="button button-secondary" href="https://drive.google.com/file/d/1RZ2BA5YzUvWLpy460zjQgSL6MmqEu3SQ/view" rel="noreferrer" aria-label="View certificate for BuildingBloCS 2025 June Conference Runner-Up"><img src="../src/icons/google-drive.svg" width="20" height="20" alt="">View certificate</a>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="5 of 6">
+                                <h3>PCEP (Certified Entry-Level Python Programmer)</h3>
+                                <div class="toolkit-image"><img src="../src/images/certificate-pcep.jpg" width="850" height="455" alt="" loading="lazy" decoding="async" draggable="false"></div>
+                                <a class="button button-secondary" href="https://drive.google.com/file/d/1m1TPpPV1orqhkDi9Tj9R85U57i1MYit6/view" rel="noreferrer" aria-label="View certificate for PCEP (Certified Entry-Level Python Programmer)"><img src="../src/icons/google-drive.svg" width="20" height="20" alt="">View certificate</a>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="6 of 6">
+                                <h3>SIM LSE Data Analytics</h3>
+                                <div class="toolkit-image"><img src="../src/images/certificate-sim-lse.jpg" width="850" height="601" alt="" loading="lazy" decoding="async" draggable="false"></div>
+                                <a class="button button-secondary" href="https://drive.google.com/file/d/15WmMDandLOyytR3pt6hQ2JzCHq3JqOMM/view" rel="noreferrer" aria-label="View certificate for SIM LSE Data Analytics"><img src="../src/icons/google-drive.svg" width="20" height="20" alt="">View certificate</a>
+                            </article>
+                        </div>
+                        <button class="toolkit-arrow toolkit-previous icon-button" type="button" aria-label="Previous certificate" aria-controls="certificate-track" hidden><img src="../src/icons/chevron-left.svg" width="16" height="16" alt=""></button>
+                        <button class="toolkit-arrow toolkit-next icon-button" type="button" aria-label="Next certificate" aria-controls="certificate-track" hidden><img src="../src/icons/chevron-right.svg" width="16" height="16" alt=""></button>
+                        <div class="toolkit-pagination" hidden>
+                            <div class="toolkit-dots" role="group" aria-label="Choose a certificate">
+                                <button class="toolkit-dot" type="button" aria-label="Show CompTIA Security+" aria-controls="certificate-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show NASA Space Apps Challenge 2026" aria-controls="certificate-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show Google.org AI Ready" aria-controls="certificate-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show BuildingBloCS 2025 June Conference Runner-Up" aria-controls="certificate-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show PCEP (Certified Entry-Level Python Programmer)" aria-controls="certificate-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show SIM LSE Data Analytics" aria-controls="certificate-track"><span></span></button>
+                            </div>
+                        </div>
+                        <div class="certificate-actions"></div>
+                        <span class="toolkit-status" role="status" aria-atomic="true"></span>
+                    </div>
+                </section>
+                <section id="hackathon" class="experience-entry info-panel" aria-labelledby="hackathon-title">
+                    <p class="eyebrow">06 / Hackathons</p>
+                    <h2 id="hackathon-title">Competition results.</h2>
+                    <div class="toolkit-carousel hackathon-carousel" role="group" aria-roledescription="carousel" aria-labelledby="hackathon-title">
+                        <div class="toolkit-track" id="hackathon-track" role="group" tabindex="0" aria-label="Hackathons, use left and right arrow keys">
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="1 of 5">
+                                <h3>NASA Space Apps Challenge 2026</h3>
+                                <div class="toolkit-image">
+                                    <img src="../src/images/hackathon-space-apps.png" alt="NASA International Space Apps Challenge logo" loading="lazy" decoding="async" draggable="false">
+                                    <a class="icon-button hackathon-github" href="https://github.com/Git-67/NASA-Space-Apps-26" aria-label="View Sol Stroll on GitHub" title="View Sol Stroll on GitHub"><img src="../src/icons/github.svg" width="22" height="22" alt=""></a>
+                                </div>
+                                <span class="hackathon-result">Results pending</span>
+                                <p>Sol Stroll is a guide to navigating the dusty terrain of Mars.</p>
+                            </article>
+                            <article class="toolkit-slide hackathon-award" aria-roledescription="slide" aria-label="2 of 5">
+                                <h3>Sentinel Cyber Sports Day 2026</h3>
+                                <div class="toolkit-image">
+                                    <img src="../src/images/hackathon-sentinel.png" alt="Sentinel Programme logo" loading="lazy" decoding="async" draggable="false">
+                                    <button class="icon-button hackathon-github" type="button" disabled aria-label="GitHub link unavailable for Sentinel Cyber Sports Day 2026" title="GitHub link unavailable"><img src="../src/icons/github.svg" width="22" height="22" alt=""></button>
+                                </div>
+                                <span class="hackathon-result">Runner-up</span>
+                                <p>Students competed in cybersecurity challenges that tested their digital defence skills.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="3 of 5">
+                                <h3>SIM LSE Data Hackathon 2026</h3>
+                                <div class="toolkit-image">
+                                    <img src="../src/images/hackathon-sim-lse.png" alt="SIM–LSE Data Analytics Challenge 2026 event poster" loading="lazy" decoding="async" draggable="false">
+                                    <button class="icon-button hackathon-github" type="button" disabled aria-label="GitHub link unavailable for SIM LSE Data Hackathon 2026" title="GitHub link unavailable"><img src="../src/icons/github.svg" width="22" height="22" alt=""></button>
+                                </div>
+                                <span class="hackathon-result">Participation</span>
+                                <p>I took part in the regional data analytics challenge, working with data analysis and visualisation.</p>
+                            </article>
+                            <article class="toolkit-slide" aria-roledescription="slide" aria-label="4 of 5">
+                                <h3>SLEUTH MODE</h3>
+                                <div class="toolkit-image">
+                                    <img src="../src/images/hackathon-sleuth-mode.png" alt="SLEUTH MODE event poster with a case file and countdown clock" loading="lazy" decoding="async" draggable="false">
+                                    <button class="icon-button hackathon-github" type="button" disabled aria-label="GitHub link unavailable for SLEUTH MODE" title="GitHub link unavailable"><img src="../src/icons/github.svg" width="22" height="22" alt=""></button>
+                                </div>
+                                <span class="hackathon-result">Participation</span>
+                                <p>Teams used AI agents to investigate a fictional financial fraud case.</p>
+                            </article>
+                            <article class="toolkit-slide hackathon-award" aria-roledescription="slide" aria-label="5 of 5">
+                                <h3>BuildingBloCS 2025 June Conference Hackathon</h3>
+                                <div class="toolkit-image">
+                                    <img src="../src/images/hackathon-buildingblocs.webp" alt="BuildingBloCS June 2025 Artificial Intelligence conference cover" loading="lazy" decoding="async" draggable="false">
+                                    <button class="icon-button hackathon-github" type="button" disabled aria-label="GitHub link unavailable for BuildingBloCS 2025 June Conference Hackathon" title="GitHub link unavailable"><img src="../src/icons/github.svg" width="22" height="22" alt=""></button>
+                                </div>
+                                <span class="hackathon-result">Runner-up · Beginner Category</span>
+                                <p>The June conference brought students together for an AI hackathon. <a href="https://drive.google.com/file/d/1RZ2BA5YzUvWLpy460zjQgSL6MmqEu3SQ/view" rel="noreferrer">View my award certificate</a>.</p>
+                            </article>
+                        </div>
+                        <button class="toolkit-arrow toolkit-previous icon-button" type="button" aria-label="Previous hackathon" aria-controls="hackathon-track" hidden><img src="../src/icons/chevron-left.svg" width="16" height="16" alt=""></button>
+                        <button class="toolkit-arrow toolkit-next icon-button" type="button" aria-label="Next hackathon" aria-controls="hackathon-track" hidden><img src="../src/icons/chevron-right.svg" width="16" height="16" alt=""></button>
+                        <div class="toolkit-pagination" hidden>
+                            <div class="toolkit-dots" role="group" aria-label="Choose a hackathon">
+                                <button class="toolkit-dot" type="button" aria-label="Show NASA Space Apps Challenge 2026" aria-controls="hackathon-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show Sentinel Cyber Sports Day 2026" aria-controls="hackathon-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show SIM LSE Data Hackathon 2026" aria-controls="hackathon-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show SLEUTH MODE" aria-controls="hackathon-track"><span></span></button>
+                                <button class="toolkit-dot" type="button" aria-label="Show BuildingBloCS 2025 June Conference Hackathon" aria-controls="hackathon-track"><span></span></button>
+                            </div>
+                        </div>
+                        <span class="toolkit-status" role="status" aria-atomic="true"></span>
+                    </div>
+                </section>
+            </div>
+
+            <section id="contact" class="contact-section" aria-labelledby="contact-title" tabindex="-1">
+                <div>
+                    <p class="eyebrow">07 / Contact</p>
+                    <h2 id="contact-title">Every conversation<br>starts with a hello.</h2>
+                </div>
+                <div class="contact-copy">
+                    <div class="contact-buttons">
+                        <a class="button button-primary" href="https://www.linkedin.com/in/teh-jing-heng-3aa589407/" target="_blank" rel="noopener noreferrer"><img src="../src/icons/linkedin.svg" width="20" height="20" alt="" aria-hidden="true">LinkedIn</a>
+                        <a class="button button-secondary" href="https://github.com/Git-67" target="_blank" rel="noopener noreferrer"><img src="../src/icons/github.svg" width="20" height="20" alt="" aria-hidden="true">GitHub</a>
+                        <a class="button button-secondary" href="mailto:johanteh09@gmail.com"><img src="../src/icons/envelope.svg" width="20" height="20" alt="" aria-hidden="true">Email</a>
+                    </div>
+                </div>
+            </section>
+            </div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <nav aria-label="Policies and data information">
+                    <a href="privacy-policy.html#main">Privacy policy</a>
+                    <a href="terms-of-service.html#main">Terms of service</a>
+                    <a href="cookie-policy.html#main">Cookie policy</a>
+                    <a href="data-collection.html#main">Data collection</a>
+                </nav>
+            </div>
+        </footer>
+    
+
+</body></html>

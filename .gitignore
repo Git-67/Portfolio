@@ -1,0 +1,10 @@
+# Local guidance and private configuration must not be committed.
+.env
+.env.*
+AGENTS.md
+DESIGN.md
+*.pem
+*.key
+__pycache__/
+*.pyc
+

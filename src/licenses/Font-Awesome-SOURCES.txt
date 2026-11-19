@@ -1,0 +1,6 @@
+Font Awesome Free 6.x: LinkedIn In, GitHub, and Envelope SVG icons.
+Certificate button: Google Drive brand icon from https://github.com/FortAwesome/Font-Awesome/blob/6.7.2/svgs/brands/google-drive.svg
+Icons licensed under CC BY 4.0; see Font-Awesome-LICENSE.txt.
+https://github.com/FortAwesome/Font-Awesome/tree/6.x
+Toolkit arrows: svgs/solid/chevron-left.svg and svgs/solid/chevron-right.svg from the same Font Awesome Free 6.x repository.
+Skill images (Free 6.x): brands/html5.svg, brands/python.svg, solid/network-wired.svg, solid/chart-column.svg, solid/code-branch.svg, brands/figma.svg, solid/robot.svg.
